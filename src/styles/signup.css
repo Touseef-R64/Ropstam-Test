@@ -1,0 +1,104 @@
+.HomeContainer{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BlockWrapper{
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.formGroup input:not([type="submit"]):not([type="button"]):not([type="tel"]) {
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    padding: 10px 0;
+  
+    width: 100%;
+    max-width: 500px;
+    border-bottom: 1px solid #d8d8d8;
+    color: #444;
+    font-size: 15px;
+    z-index: 1;
+  }
+  .formGroup
+    input:not([type="submit"]):not([type="button"]):not([type="tel"]):focus {
+    border-bottom: 1px solid rgb(179, 174, 174);
+  }
+  
+  .formGroup input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .formGroup input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .formGroup label {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transform: translateY(40px);
+    color: #353535;
+    transition: all 0.4s;
+    cursor: text;
+    z-index: -1;
+  }
+  .formGroup label.active {
+    transform: translateY(10px);
+    font-size: 10px;
+  }
+  .formGroup label.fontSwitch {
+    font-weight: 600;
+  }  
+  .formGroup label > span.requiredLabel {
+    color: red;
+  }
+
+  .formGroup {
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+  
+    max-width: 500px;
+  }
+  
+  .inputBox{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+  }
+
+
+  .formbtnWrapper{
+    margin-top: 20px;
+  }
+
+
+
+  .postbtn {
+    background-color: #5495df;
+    border: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 5px 20px;
+    margin: 5px;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    align-self: flex-end;
+    transition: all 0.4s;
+  }
+  
+  .postbtn:hover {
+    box-shadow: 2px 8px 13px -8px rgba(0, 0, 0, 0.46);
+    transform: translateY(-3px);
+  }
